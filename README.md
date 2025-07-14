@@ -1,118 +1,90 @@
-<h1 align="center">Wix Headless Templates</h1>
+# Wix Headless Examples
 
-> Join the Wix Headless community on [Discord](https://discord.gg/n6TBrSnYTp)! 🚀
+> Join the [Wix Headless community on Discord](https://discord.com/invite/n6TBrSnYTp) to get official support, interact with fellow Wix Headless developers and get updates on new releases.
 
-Welcome to the Wix Headless Templates repository! This repository contains various templates for building headless websites using Wix and different front-end frameworks.
+This [Next.js](https://nextjs.org/) project provides a minimal example site to demonstrate basic usage of various Wix
+Headless APIs. The implementation focuses on simplicity and readability, rather than feature richness, performance, or
+completeness. This repository can be used as a quick reference for bootstrapping a Wix Headless application.
 
-Wix Headless allows you to leverage Wix's powerful business solutions and APIs to manage content, Wix Bookings, Wix Stores, and more, while using your preferred front-end technology. By decoupling the backend from the frontend, you can create highly customizable and performant websites.
+For a more comprehensive example of Wix Headless integration, we recommend checking out
+our [starter templates](https://www.wix.com/developers/headless/templates).
 
-Wix offers a variety of business solutions, including:
-- **Content Management System (CMS)**: Manage and organize your website content through an intuitive interface.
-- **Wix Bookings**: Handle appointments, classes, and subscriptions with ease.
-- **Wix Stores**: Manage products, orders, and inventory for your online store.
-- **Wix Events**: Organize and manage events, ticketing, and attendee registration.
-- **Wix Members**: Integrate user authentication and management into your website.
+You can view the latest version of this repo deployed
+at [https://wix-headless-example.vercel.app/](https://wix-headless-example.vercel.app/).
 
-The templates in this repository showcase the usage of these business solutions APIs, providing you with ready-to-use examples. They can be used as starting points for new projects or as reference implementations when integrating these features into your own projects.
+## Getting Started
 
-## Resources
+There are two ways to experiment with the example site functionality:
 
-Here are some useful links for getting started with Wix Headless and the available templates:
+### Code Sandbox
 
-- [Wix Headless Documentation](https://dev.wix.com/docs/go-headless)
-- [Wix SDK Documentation](https://dev.wix.com/docs/sdk)
-- [Wix Headless Templates Page](https://www.wix.com/studio/developers/headless/templates)
-- [Community on Discord](https://discord.gg/n6TBrSnYTp)
+1. Fork the CodeSandbox project by click **Fork** in the top right corner, after signing in.
+2. In [constants/constants.js](./constants/constants.js), replace the existing client ID with your own. You can find
+   your client
+   ID
+   under [headless settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings)
+   in your project dashboard.
+3. **Make sure you save any changes in order to see their effect**
 
-## Templates
+### Copy the project to your local workspace
 
-<table>
-  <thead>
-    <tr>
-      <th>Template</th>
-      <th>Description</th>
-      <th>Live Demo</th>
-      <th>Wix Apps Used</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="4" align="center"><strong>Astro</strong></td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center"><a href="./astro/">Getting Started with Wix Astro templates</a></td>
-      </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/astro/astrowind">AstroWind</a></td>
-      <td>Integrates Astro with Tailwind CSS, providing advanced slot usage and dark mode configuration.</td>
-      <td></td>
-      <td>CMS, Wix Blog, Wix Pricing Plans</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/astro/blog">Blog</a></td>
-      <td>Combines the official Astro Blog template with Wix Headless for seamless content management and high-performance static site using Astro.</td>
-      <td></td>
-      <td>Wix Blog</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/astro/commerce">Commerce</a></td>
-      <td>A template for creating e-commerce sites using Astro and Wix Headless.</td>
-      <td></td>
-      <td>Wix Stores</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center"><strong>Next.js</strong></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/minimal-examples">Minimal Examples</a></td>
-      <td>Concise examples for Next.js projects integrated with Wix Headless.</td>
-      <td><a href="https://wix-headless-example.vercel.app">Minimal Examples Demo</a></td>
-      <td>Wix Stores, Wix Bookings, Wix Events</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/appointments-subscriptions">Appointments Subscriptions</a></td>
-      <td>A template for managing appointments and subscriptions using Next.js and Wix Headless.</td>
-      <td><a href="https://netlify.bookings-appointments-demo.wix.dev">Appointments Subscriptions Demo</a></td>
-      <td>Wix Bookings, Wix Members</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/classes-subscriptions">Classes Subscriptions</a></td>
-      <td>A template for managing class subscriptions using Next.js and Wix Headless.</td>
-      <td><a href="https://netlify.bookings-classes-demo.wix.dev">Classes Subscriptions Demo</a></td>
-      <td>Wix Bookings, Wix Members</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/cms-education">CMS Education</a></td>
-      <td>Uses Wix Headless to leverage the Wix CMS for managing content on an education site.</td>
-      <td><a href="https://netlify.cms-demo.wix.dev/">CMS Education Demo</a></td>
-      <td>CMS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/commerce-ticketing">Commerce Ticketing</a></td>
-      <td>A template for an online store and event ticketing using Next.js and Wix Headless.</td>
-      <td><a href="https://netlify.commerce-ticketing-demo.wix.dev/">Commerce Ticketing Demo</a></td>
-      <td>Wix Events, Wix Members</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/commerce">Next.js Commerce</a></td>
-      <td>The <a href="https://github.com/vercel/commerce">Next.js Commerce</a> template with headless integration using Wix.</td>
-      <td></td>
-      <td>Wix Stores</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/external-identity-provider">External Identity Provider</a></td>
-      <td>A template for integrating external identity providers (e.g Github) using Next.js and Wix Headless.</td>
-      <td></td>
-      <td>Wix Members</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center"><strong>React Native (Expo)</strong></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/react-native/mobile-ecommerce">Mobile E-commerce</a></td>
-      <td>A template for creating mobile e-commerce applications using React Native and Wix Headless.</td>
-      <td></td>
-      <td>Wix Stores, Wix Members</td>
-    </tr>
-  </tbody>
-</table>
+1. Clone the [github repo](https://github.com/wix/headless-templates/tree/main/nextjs/minimal-examples).
+2. Run the following commands:
+
+    ```bash
+    cd wix-headless-example
+    npm install
+    ```
+
+3. In [constants/constants.js](./constants/constants.js), replace the existing client ID with your own. You can find
+   your client
+   ID
+   under [headless settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings)
+   in your project dashboard.
+4. Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Wix Headless APIs Usage
+
+This project demonstrates the usage of various Wix Headless APIs. Here's a brief overview of each:
+
+### Headless Bookings
+
+The [`pages/booking.js`](./pages/booking.js) file demonstrates how to use
+the [Wix Bookings API](https://dev.wix.com/docs/sdk/backend-modules/bookings/bookings/introduction) to fetch a list of
+services and their availability from your site.
+
+> **[Wix Bookings API](https://dev.wix.com/docs/sdk/backend-modules/bookings/bookings/introduction)**: This API allows
+> you to manage bookings for a site's services. It holds information about the customer and the session or schedule they
+> have booked.
+
+### Headless eCommerce
+
+The [`pages/store.js`](./pages/store.js) file demonstrates how to fetch a list of products from your site using
+the [Wix Stores API](https://dev.wix.com/docs/sdk/backend-modules/stores). It also demonstrates how to use
+the [Wix eCommerce API](https://dev.wix.com/docs/sdk/backend-modules/ecom/introduction) to manage carts and checkouts.
+
+> **[Wix Stores API](https://dev.wix.com/docs/sdk/backend-modules/stores)**: This API allows you to manage your store
+> inventory, orders, and collections.
+> It provides a comprehensive set of services for customizing store functionality.
+>
+> **[Wix eCommerce API](https://dev.wix.com/docs/sdk/backend-modules/ecom/introduction)**: This API provides a
+> comprehensive set of services for customizing eCommerce functionality on your sites.
+> It allows you to manage a site visitor's cart, handle checkout and payment flow, create and manage discount rules,
+> promote items, and manage orders.
+
+### Headless Tickets
+
+The [`pages/tickets.js`](./pages/tickets.js) file demonstrates how to use
+the [Wix Events API](https://dev.wix.com/docs/sdk/backend-modules/events/introduction) to fetch a list of events and
+their available tickets from your site.
+
+> **[Wix Events API](https://dev.wix.com/docs/sdk/backend-modules/events/introduction)**: This API provides
+> functionality for creating, updating, and managing events.
+> It allows you to manage event details like location, scheduling, registration, tickets, RSVPs, online conferencing,
+> messaging customization, and basic registration form customization.
